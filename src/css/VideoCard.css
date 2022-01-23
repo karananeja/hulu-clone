@@ -1,0 +1,35 @@
+.videoCard {
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  color: var(--white-color);
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+.videoCard:hover {
+  transform: scale(1.09);
+}
+
+.videoCard__img {
+  height: 300px;
+  width: 500px;
+  object-fit: contain;
+}
+
+.videoCard > h2 {
+  padding-top: 10px;
+}
+
+.videoCard__stats {
+  display: none;
+}
+
+.videoCard__stats > .MuiSvgIcon-root {
+  padding: 0 5px;
+}
+
+.videoCard:hover > .videoCard__stats {
+  display: flex;
+  align-items: center;
+}
